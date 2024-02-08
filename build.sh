@@ -6,7 +6,7 @@ source ~/.bashrc && source ~/.profile
 export LC_ALL=C && export USE_CCACHE=1
 ccache -M 100G
 export ARCH=arm64
-export KBUILD_BUILD_HOST="LMAOxDEVS"
+export KBUILD_BUILD_HOST="ECLIPSExDEVS"
 export KBUILD_BUILD_USER="Shub"
 
 if [ -d "clang" ];
@@ -50,9 +50,9 @@ function upload()
 git clone --depth=1 https://github.com/shub876/Anykernel3.git -b rm6785 Anykernel3
 cp out/arch/arm64/boot/Image.gz-dtb Anykernel3
 cd Anykernel3
-zip -r9 LMAO-OSS-KERNEL-RM6785-R.zip *
-curl --upload-file "LMAO-OSS-KERNEL-RM6785-R.zip" https://free.keep.sh
-curl bashupload.com -T LMAO-OSS-KERNEL-RM6785-R.zip
+zip -r9 ECLIPSE-OSS-KERNEL-RM6785-R.zip *
+curl --upload-file "ECLIPSE-OSS-KERNEL-RM6785-R.zip" https://free.keep.sh
+curl bashupload.com -T ECLIPSE-OSS-KERNEL-RM6785-R.zip
 }
 compile
 upload
